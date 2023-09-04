@@ -1,14 +1,14 @@
 <?php
     session_start();
-    // $user = $_SESSION['usuario'];
-    // if(isset($_SESSION['message']))
-    // {   
-    //     $message = $_SESSION['message'];
-    // }
-    // if(!isset($user))
-    // {
-    //     header('Location: ./index.php');
-    // }
+    $user = $_SESSION['usuario'];
+    if(isset($_SESSION['message']))
+    {   
+        $message = $_SESSION['message'];
+    }
+    if(!isset($user))
+    {
+        header('Location: ./index.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

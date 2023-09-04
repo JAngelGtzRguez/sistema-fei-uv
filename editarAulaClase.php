@@ -1,10 +1,10 @@
 <?php
     session_start();
-    // $user = $_SESSION['usuario'];
-    // if(!isset($user))
-    // {
-    //     header('Location: ./index.php');
-    // }
+    $user = $_SESSION['usuario'];
+    if(!isset($user))
+    {
+        header('Location: ./index.php');
+    }
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") 
     {
